@@ -1,10 +1,6 @@
 name: Nightwatch Test
 
-on:
-  push:
-    branches: [ "new-branch" ]
-  pull_request:
-    branches: [ "new-branch" ]
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   test-nightwatch:
