@@ -4,10 +4,11 @@ const commands = {
         .waitForElementVisible('@SearchBar') // Wait for the search bar to be visible
         .click('@SearchBar'); // Click on the search bar
     },
-    clickfirstproduct: function(){
-      .waitForElementVisible('@FirstSearchResult')
-      .click('@FirstSearchResult')
-    }
+    // clickfirstproduct: async function(){
+    //   await browser.waitForElementVisible('@FirstSearchResult')
+    //   // await browser.waitForElementVisible(".material-symbols-outlined.hex", 5000);
+    //   // .click('@FirstSearchResult')
+    // }
   };
   
   module.exports = {
@@ -18,7 +19,7 @@ const commands = {
         locateStrategy: 'css selector', // Specify the locator strategy
       },
       FirstSearchResult: {
-        selector: '#autocomplete-0-suggestions-list .aa-Item:first-child' // clicking on the first Product item
+        selector: '#autocomplete-0-suggestions-list .aa-Item:first-child', // clicking on the first Product item
         locateStrategy: 'css selector', 
       },
     },
