@@ -20,7 +20,8 @@ describe('Jiomart Search', function() {
     // homePage.assert.textContains('.jio-web.search-result-page.alg.srch.master', 'Filters');
 
     // homePage.browser.assert.urlEquals('iphone%2013')
-    browser.assert.urlContains('iphone%2013');
+    // browser.pause();
+    browser.assert.urlContains('iphone%2013/in/prod_mart_master_vertical');
   });
 
   it('2. Verify that the user should not be able to search Unavailable product',async function(browser){
@@ -30,7 +31,7 @@ describe('Jiomart Search', function() {
     await browser.execute(
       'document.querySelector("#autocomplete-0-suggestions-list .aa-Item:first-child").click();'
     );
-    // browser.pause();
+    
     // homePage.assert.textContains('.jio-web.search-result-page.alg.srch.master', 'Filters');
     browser.assert.not.urlContains('nokia/in/prod_mart_master_vertical');
   })
