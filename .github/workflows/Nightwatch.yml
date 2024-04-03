@@ -31,4 +31,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: test-reports
-          path: reports/  # Adjust this to match the directory where Nightwatch generates test reports
+          path: tests_output  # Adjust this to match the directory where Nightwatch generates test reports
