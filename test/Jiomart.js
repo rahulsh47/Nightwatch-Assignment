@@ -21,6 +21,8 @@ describe('Jiomart Search', function() {
 
     // homePage.browser.assert.urlEquals('iphone%2013')
     // browser.pause();
+
+
     browser.assert.urlContains('https://www.jiomart.com/search/iphone%2013/in/prod_mart_master_vertical');
   });
 
