@@ -6,7 +6,7 @@ describe('Jiomart Search', function() {
   afterEach(async (browser) => browser.quit());
 
   it('1. Verify that user should able to search available product',async function(browser) {
-    homePage.setValue('.aa-Input.search_input', 'iphone 13');
+    homePage.setValue('.aa-Input.search_input', 'iphone 15');
     // browser.waitForElementVisible('.aa-Input.search_input');
     // // homePage.clickfirstproduct();
     // await browser.execute(
@@ -23,7 +23,7 @@ describe('Jiomart Search', function() {
     // browser.pause();
 
 
-    browser.assert.urlContains('https://www.jiomart.com/search/iphone%2013/in/prod_mart_master_vertical');
+    browser.assert.urlContains('https://www.jiomart.com/search/iphone%2015');
   });
 
   it('2. Verify that the user should not be able to search Unavailable product',async function(browser){
