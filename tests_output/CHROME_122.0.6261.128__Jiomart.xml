@@ -5,16 +5,16 @@
 
   <testsuite name="Jiomart"
     errors="0" failures="0" hostname="" id="" package="Jiomart" skipped="0"
-    tests="2" time="38.10" timestamp="">
+    tests="2" time="15.73" timestamp="">
   
-    <testcase name="1. Verify that user should able to search available product" classname="Jiomart" time="7.587" assertions="2">
+    <testcase name="1. Verify that user should able to search available product" classname="Jiomart" time="3.622" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="2. Verify that the user should not be able to search Unavailable product" classname="Jiomart" time="11.46" assertions="1">
+    <testcase name="2. Verify that the user should not be able to search Unavailable product" classname="Jiomart" time="4.243" assertions="1">
 
     
     </testcase>
