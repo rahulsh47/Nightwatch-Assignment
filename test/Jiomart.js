@@ -13,9 +13,9 @@ describe('Jiomart Search', function() {
     //   document.querySelector('#autocomplete-0-suggestions-list .aa-Item:first-child').click();
     // );
 
-    await browser.waitForElementVisible("#autocomplete-0-suggestions-list .aa-Item:first-child", 5000);
+    await browser.waitForElementVisible("li[id='autocomplete-0-suggestions-item-0'] span:nth-child(2)", 5000);
     await browser.execute(
-      'document.querySelector("#autocomplete-0-suggestions-list .aa-Item:first-child").click();'
+      'document.querySelector("li[id='autocomplete-0-suggestions-item-0'] span:nth-child(2)").click();'
     );
     // homePage.assert.textContains('.jio-web.search-result-page.alg.srch.master', 'Filters');
 
